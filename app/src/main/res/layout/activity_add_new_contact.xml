@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <data>
+        <variable
+            name="contact"
+            type="com.example.mini_project.MiniProject" />
+        <variable
+            name="clickHandler"
+            type="com.example.mini_project.AddNewContactClickHandler" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".AddNewContactActivity">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginBottom="41dp"
+            android:autofillHints="name"
+            android:hint="@string/hint1"
+            android:inputType="text"
+            android:text="@={contact.name}"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/emailEDT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emailEDT"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="46dp"
+            android:autofillHints="emailAddress"
+            android:hint="@string/hint2"
+            android:inputType="textEmailAddress"
+            android:text="@={contact.email}"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/passwordEDT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <EditText
+            android:id="@+id/passwordEDT"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="118dp"
+            android:autofillHints="password"
+            android:hint="@string/hint3"
+            android:inputType="number"
+            android:text="@={contact.password}"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEDT" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="249dp"
+            android:onClick="@{clickHandler::onSubmitBtnClicked}"
+            android:text="@string/btnsubmit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEDT" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

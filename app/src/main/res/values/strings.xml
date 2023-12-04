@@ -4,5 +4,9 @@
     <string name="group">GROUP: Group Sufi</string>
     <string name="name">NAME: Ahmad Sufi Danial Bin Abdul Aziz</string>
     <string name="id">ID: 34DDT21F1048</string>
+    <string name="hint1">ENTER NAME</string>
+    <string name="hint2">ENTER EMAIL</string>
+    <string name="hint3">ENTER PASSWORD</string>
+    <string name="btnsubmit">Add Contact to ROOM DB</string>
 
 </resources>
