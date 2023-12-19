@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +26,12 @@ public class MainActivity extends AppCompatActivity {
         next_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent next_page = new Intent(MainActivity.this, OptionHandler.class);
                 startActivity(next_page);
+
+                // TOAST
+                Toast.makeText(MainActivity.this, "Hello, User :D", Toast.LENGTH_LONG).show();
             }
         });
 

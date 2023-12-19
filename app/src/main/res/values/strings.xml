@@ -3,6 +3,8 @@
     <string name="title">List Of Photos</string>
     <string name="choose">Choose Options</string>
     <string name="second_title">Image Search Engine</string>
+    <string name="back_option">Back To Option</string>
+    <string name="home_option">Back To Home</string>
     <string name="search_me">Search Image</string>
     <string name="hint_one">Search Any Images</string>
     <string name="desc">alt</string>

@@ -16,6 +16,8 @@
             android:exported="false"/>
         <activity android:name=".OptionHandler"
             android:exported="false"/>
+        <activity android:name=".SearchEngine"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

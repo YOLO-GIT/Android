@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class OptionHandler extends AppCompatActivity {
 
-    Button page_one, page_two;
+    Button page_one, page_two, page_home;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,13 @@ public class OptionHandler extends AppCompatActivity {
 
         // Page One Section Start
         page_one = (Button) findViewById(R.id.page_one);
+        page_one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent page_one = new Intent(OptionHandler.this, SearchEngine.class);
+                startActivity(page_one);
+            }
+        });
         // Page one Section End
 
         // Page Two Section Start
@@ -30,5 +37,16 @@ public class OptionHandler extends AppCompatActivity {
             }
         });
         // Page Two Section End
+
+        // Page Home Button Start
+        page_home = (Button) findViewById(R.id.home_button);
+        page_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home_page = new Intent(OptionHandler.this, MainActivity.class);
+                startActivity(home_page);
+            }
+        });
+        // Page Home Button End
     }
 }
