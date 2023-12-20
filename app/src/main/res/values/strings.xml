@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FA_Code</string>
+    <string name="shop_name">Kupi - Kupi House Cafe</string>
+    <string name="shop_desc">Kupi - Kupi House is a coffee lover stopper as we offer varieties of
+        coffee and patisseries and such. We opened from 8: 00 AM to 10: 00 PM</string>
+    <string name="shop_btn">Jom Kupi</string>
+    <string name="option_title">Main Courses</string>
+    <string name="btn_one">Breakfast Course</string>
+    <string name="btn_two">Lunch Course</string>
+    <string name="btn_three">Dinner Course</string>
+    <string name="home_btn">Back To The Home Page</string>
+    <string name="for_image">Alt</string>
+    <string name="breakfast_time">Breakfast: 8:00 AM - 11:00 AM</string>
+    <string name="lunch_time">Lunch: 2:00 PM - 4:00 PM</string>
+    <string name="dinner_time">Dinner: 8:00 PM - 10:00 PM</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="cll_us">Our Shop`s Number : 014 - 2310 400</string>
+    <string name="address">Our Shop`s Address : Jalan Segamat, Kg Bilah Kerbau, Johor Bahru, Johor 17900, Malaysia</string>
+</resources>
